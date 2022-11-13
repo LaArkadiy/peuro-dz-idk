@@ -26,6 +26,10 @@ class __Prop:
         self.I_ud = dic['I_ud']
         self.B = dic['B']
         self.F1 = _get_u(dic['name'])
+        self.sigma_t = 300
+        self.nu_t = 0.7
+        self.c_t = 1250
+        self.T_s = 600
     
     def F3(self,T_n):
         return self.B / (self.B - (T_n - 291.15))
